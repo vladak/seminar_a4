@@ -1,14 +1,4 @@
-%\documentclass[article]{seminar}
-%\documentclass[slidesonly]{seminar}
-%\documentclass[a4paper]{seminar}
-
-\usepackage{multicol}
-\usepackage{tabularx}
-
 \usepackage{nth}
-
-%\input{seminar.bg2}
-%\usepackage{seminar}
 
 % color doc: http://en.wikibooks.org/wiki/LaTeX/Colors
 % color defs: http://www.w3schools.com/html/html_colors.asp
@@ -31,6 +21,7 @@
 	pdfkeywords={Unix, programming, C, MFF, MFF-UK},%
 	pagebackref=true,%
 	]{hyperref}
+
 \usepackage{url}
 % by default \url will use monospaced font. suppress this and use normal font.
 \urlstyle{same}
@@ -48,13 +39,6 @@
 
 %%% Macros %%%
 
-% (janp)
-\chardef\clqq=254  \sfcode254=0 \lccode254=0
-\chardef\crqq=255  \sfcode255=0 \lccode255=0
-%\DeclareRobustCommand\uv[1]{{\leavevmode\clqq#1\crqq}}
-\DeclareRobustCommand\uv[1]{{\leavevmode{},,#1''}}
-% (janp) end
-
 \renewcommand{\slidelabel}{}
 \setlength{\textwidth}{0.9\textwidth}
 
@@ -64,29 +48,6 @@
 \centerslidesfalse
 
 \newcounter{topicval}
-
-\newcommand{\slidecontents}[1]{%
-  \setcounter{topicval}{#1}%
-  \begin{itemize}
-  \topic{1}{Introduction, Unix and C, programming tools}
-  \topic{2}{Basic Unix concepts and conventions, its API}
-  \topic{3}{Access rights, devices}
-  \topic{4}{Process manipulation, program execution}
-  \topic{5}{Signals}
-  \topic{6}{Process synchronization and interprocess communication}
-  \topic{7}{Network programming}
-  \topic{8}{Programming with threads}
-  \topic{9}{Appendix}
-  \end{itemize}%
-}
-\newcommand{\topic}[2]{%
-  \item\relax
-  \ifnum #1=\value{topicval}%
-    \textbf{#2}%
-  \else
-    #2%
-  \fi
-}
 
 \begin{document}
 
