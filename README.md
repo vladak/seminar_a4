@@ -12,10 +12,10 @@ This used to work, with older `pdflatex` and `seminar` - see `main-old.pdf`.
 The goal is to generate A4 page in portrait mode that has slides with comments underneath.
 
 The set of PDFs:
-  - `main-old.pdf`: generated on macOS with TeX Live 2012 and seminar 2008/10/15, 1.5
+  - [main-old.pdf](https://github.com/vladak/seminar_a4/blob/main/main-old.pdf): generated on macOS with TeX Live 2012 and seminar 2008/10/15, 1.5
     - this is how it should look like
-  - `main-new.pdf`: generated on Ubuntu with XXX
-    - `main-new-seminar_portrait.pdf`: ditto but using `portrait` option for the `seminar` package
+  - [main-new.pdf](https://github.com/vladak/seminar_a4/blob/main/main-new.pdf): generated on Ubuntu with XXX
+    - [main-new-seminar_portrait.pdf](https://github.com/vladak/seminar_a4/blob/main/main-new-seminar_portrait.pdf): ditto but using `portrait` option for the `seminar` package
       - corrupts the page
-    - `main-new-without_hyperref.pdf`: ditto but not using the `hyperref` package
+    - [main-new-without_hyperref.pdf](https://github.com/vladak/seminar_a4/blob/main/main-new-without_hyperref.pdf): ditto but not using the `hyperref` package
       - generates A4 in portrait mode, however the output is not centered
