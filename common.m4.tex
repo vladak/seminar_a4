@@ -61,33 +61,6 @@
 \newcommand{\sltitle}[1]{{\centering\textbf{\Large #1}
     \vskip 2em plus 0pt minus 2em\par}} % Slide title
 
-\newenvironment{itemize2} % Itemize with smaller font
-    {\begin{itemize}\small} {\end{itemize}}
-    
-\newsavebox{\boxTMP}
-\newcommand{\raisetab}[1]{ % Align first table row with other text
-    \sbox{\boxTMP}{\begin{tabular}{c}\hline X\\\hline\end{tabular}}
-    \raisebox{\ht\boxTMP}{#1}}
-
-\newcommand{\funnm}[1] {% Emphasized function name
-    {\bf #1}}
-
-\newcommand{\funml}[1] { % Multi-line function prototype
-    \begin{minipage}{\slidewidth}
-    \vspace{-1ex}\texttt{\begin{tabbing}#1\end{tabbing}}
-    \end{minipage}}
-
-\newcommand{\bs}{\char92\relax} % TT backslash
-% http://tex.stackexchange.com/questions/9363/how-does-one-insert-a-backslash-or-a-tilde-into-latex
-\newcommand{\tilda}{\char`\~} % TT tilda
-
-\newtoks\prgcharsI\newtoks\prgcharsII
-{\catcode`\_=13\catcode`\&=13\global\prgcharsI={_}\global\prgcharsII={&}}
-\def\prgchars{ % Do not require backslashes for these characters often used
-                % in C program source code
-    \catcode`\_=13\catcode`\&=13
-    \expandafter\def\the\prgcharsI{\_}\expandafter\def\the\prgcharsII{\&}}
-
 \centerslidesfalse
 
 \newcounter{topicval}
