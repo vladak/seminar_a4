@@ -5,7 +5,6 @@
 \definecolor{MyDarkBlue}{RGB}{71,57,146} % BlueViolet
 \definecolor{MyDarkRed}{RGB}{139,00,00}
 
-
 % hyperref docs:
 %   http://www.tug.org/applications/hyperref/manual.html
 %   http://en.wikibooks.org/wiki/LaTeX/Hyperlinks
@@ -31,7 +30,38 @@
 
 \begin{document}
 
-\input{intro.m4.tex}
+\begin{slide}
+\centerslidestrue
+\begin{center}
+\title{\LARGE Foo}
+\author{(foo)}
+\date{Version: \rm\today}
+\maketitle
+
+\vspace{2ex}
+Foo bar\\
+
+\end{center}
+\end{slide}
+
+\begin{itemize}
+\item Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar
+Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar
+\end{itemize}
+
+\pagebreak
+
+\begin{slide}
+Bar
+foo bar
+\end{slide}
+
+\begin{itemize}
+\item Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar
+Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar
+\item Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar
+Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar Foo bar
+\end{itemize}
 
 \begin{slide}
 \centerslidestrue
