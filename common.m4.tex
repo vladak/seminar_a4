@@ -43,17 +43,10 @@
 
 \usepackage{alltt}
 \usepackage{graphicx}
-%\usepackage{psfrag}
-%\usepackage{pstricks} % does not work with colortbl
-%\usepackage{colortbl}
 
 \usepackage{upquote}
 
 %%% Macros %%%
-
-% colored frame around source code path to examples
-% which is actually a link
-\newcommand{\example}[1]{\fcolorbox{cyan}{white}{\href{https://github.com/devnull-cz/unix-linux-prog-in-c-src/blob/master/#1}{\texttt{#1}}}}
 
 % (janp)
 \chardef\clqq=254  \sfcode254=0 \lccode254=0
@@ -67,20 +60,6 @@
 
 \newcommand{\sltitle}[1]{{\centering\textbf{\Large #1}
     \vskip 2em plus 0pt minus 2em\par}} % Slide title
-
-% bold
-\newcommand{\emsl}[1]{\textbf{#1}} % Emphasizing in slides
-
-
-\newcommand{\emprg}[1]{\emph{\color[rgb]{1,0,0} #1}} % Emphasize in programs
-\newcommand{\emblue}[1]{\emph{\color[rgb]{0,0,1} #1}} % emph in blue
-
-% my very important note
-\newcommand{\rednote}[1]{\color[rgb]{1,0,0} #1}
-
-% What should be checked
-\newcommand{\CHECK}[1]{{\color[rgb]{1,0,0} $\star$#1$\star$}}
-
 
 \newenvironment{itemize2} % Itemize with smaller font
     {\begin{itemize}\small} {\end{itemize}}
