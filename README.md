@@ -7,7 +7,7 @@ This is spawned by https://github.com/devnull-cz/unix-linux-prog-in-c/issues/51
 
 Posted as https://tex.stackexchange.com/questions/697482/how-to-reconcile-hyperref-with-seminar-so-that-a4-in-portrait-mode-with-centered
 
-This used to work, with older `pdflatex` and `seminar` - see `main-old.pdf`.
+This used to work, with older `pdflatex` and `seminar` - see [main-old.pdf](https://github.com/vladak/seminar_a4/blob/main/main-old.pdf).
 
 The goal is to generate A4 page in portrait mode that has slides with comments underneath.
 
